@@ -26,7 +26,18 @@ export class ListRequestComponent implements OnInit {
       submitDate: '2022-02-22',
       approvedDate: '2022-03-01',
       manager: 'Levi'
-    },];
+    },
+    {
+      reqId: 3,
+      userId: 3,
+      reqType: 'food',
+      reqAmount: 100,
+      reqStatus: 'denied',
+      submitDate: '2022-02-22',
+      approvedDate: '2022-03-01',
+      manager: 'Bruno'
+    }
+  ];
   constructor() { }
 
   ngOnInit(): void {
