@@ -1,20 +1,18 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
       <ul class="navbar-nav">
-        <li class="nav-item" *ngIf="isLoggedIn()==true && getRole()=='customer'">
-          <a class="nav-link" routerLink="display">Display Component</a>
+        <li class="nav-item" *ngIf="isLoggedIn()==true && getRole()=='manager'||' associate'">
+          <a class="nav-link" routerLink="account">Display account</a>
         </li>
-        <li class="nav-item" *ngIf="isLoggedIn()==true && getRole()=='customer'">
-          <a class="nav-link" routerLink="copy">Copy Component</a>
+        <li class="nav-item" *ngIf="isLoggedIn()==true && getRole()=='manager'||' associate'">
+          <a class="nav-link" routerLink="account.http">Display  http_accoun</a>
         </li>
-        <li class="nav-item" *ngIf="isLoggedIn()==true && getRole()=='customer'">
-          <a class="nav-link" routerLink="counter">Counter Component</a>
+        
+        <li class="nav-item" *ngIf="isLoggedIn()==true && getRole()==' associate'||'manager'">
+            <a class="nav-link" routerLink="Reimbursement.http">Display remebursmentt</a>
         </li>
-        <li class="nav-item" *ngIf="isLoggedIn()==true && getRole()=='customer'">
-            <a class="nav-link" routerLink="list-fruit">List Fruit Component</a>
-        </li>
-        <li class="nav-item" *ngIf="isLoggedIn()==true && getRole()=='admin'">
-        <a class="nav-link" routerLink="book-crud">Book Component</a>
+        <li class="nav-item" *ngIf="isLoggedIn()==true && getRole()=='associate'||'manager'">
+        <a class="nav-link" routerLink="Reimbursement">Reimbursement Component</a>
         </li>
         <li class="nav-item" *ngIf="isLoggedIn()==false">
           <a class="nav-link" routerLink="login">Login</a>

@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
       this.errorMessage = "Invalid Credentials!!";
     }else{
       // successful login
-      if(returnUser.role == "admin"){
+      if(returnUser.role == "' associate'","'manager'"){
         //navigate to book-crud
         this.router.navigate(['book-crud']);
       }else{
