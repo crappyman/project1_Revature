@@ -10,6 +10,7 @@ import { LogoutComponent } from './user/logout/logout.component';
 import { ListAccountComponent } from './account/list-account/list-account.component';
 import { ListRequestComponent } from './reimbursement/list-request/list-request.component';
 import { ListHttpAccountComponent } from './account/list-http-account/list-http-account.component';
+import { ListHttpRequestComponent } from './reimbursement/list-http-request/list-http-request.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ListHttpAccountComponent } from './account/list-http-account/list-http-
     LogoutComponent,
     ListAccountComponent,
     ListRequestComponent,
-    ListHttpAccountComponent
+    ListHttpAccountComponent,
+    ListHttpRequestComponent
   ],
   imports: [
     BrowserModule,

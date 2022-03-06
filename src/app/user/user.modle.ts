@@ -1,6 +1,7 @@
 export interface User{
-userName:string,
+username:string,
 password:string,
-role:string
+role:string,
+role_id: number
 
 }
